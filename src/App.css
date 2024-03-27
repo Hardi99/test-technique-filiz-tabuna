@@ -1,42 +1,291 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+button {
+  cursor: pointer;
+  margin: 25px auto;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-family: Nohemi;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 63px;
+  text-align: left;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+h2 {
+  font-family: Nohemi;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 61.6px;
+  text-align: left;
+}
+
+h3 {
+  font-family: Nohemi;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
+
+h4 {
+  font-family: Nohemi;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+}
+
+#home, #about, #cards nav, #form {
+  display: flex;
+}
+
+#about, #cards, #form, #home {
+  padding: 80px;
+}
+
+/* HEADER */
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  #responsive a {
+    display: none;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .navbar img {
+    width: 100px;
+    object-fit: cover;
+    cursor: pointer;
   }
+  
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-align: center;
+  }
+
+  .topnav {
+    display: flex;
+    gap: 25px
+  }
+
+  .topnav a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Proxima Nova';
+    color: #000;
+  }
+
+  a:nth-child(3) {
+    color: #71A894;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  /* HOME */
+
+  #home {
+    align-items: center;
+    justify-content: center;
+    left: 72px;
+    gap: 40px;
+  }
+
+  #home div {
+    width: 474px;
+  }
+
+  #home button {
+    background: #71A894;
+    border: none;
+    color: #fff;
+    padding: 20px 24px;
+    border-radius: 46px;
+    font-family: Proxima Nova;
+  }
+
+  #home img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+  }
+
+/* ABOUT */
+
+#about {
+  background: #F3F0EA;
+  gap: 100px;
 }
 
-.card {
-  padding: 2em;
+/* CARDS */
+
+#cards {
+  background: #F9F9F9;
 }
 
-.read-the-docs {
-  color: #888;
+#cards h2 {
+  font-family: Nohemi;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 61.6px;
+  text-align: center;
+  color: #71A894;
+}
+
+#cards nav {
+  gap: 20px;  
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#cards div {
+  width: 360px;
+  padding: 64px 17px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+/* FORM */
+
+#form {
+  background: #F3F0EA;
+  display: flex;
+  gap: 50px;
+}
+
+#text {
+  width: 45%;
+}
+
+form nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
+  width: 300px;
+}
+
+.btn {
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #71A894;
+  border: none;
+  padding: 18px 22px;
+  border-radius: 46px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  #responsive {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+  }
+
+  #responsive a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+  }
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    top: 100px;
+    border: 1px solid white;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  #home {
+    justify-content: center;
+  }
+
+  #home img {
+    width: 349.07px;
+    height: 295.26px;
+  }
+
+  #about, #home {
+    flex-direction: column-reverse;
+  }
+
+  #home, #form {
+    flex-direction: column;
+  }
+
+  #form {
+    justify-content: center;
+  }
+  #text {
+    width: 100%;
+  }
 }
