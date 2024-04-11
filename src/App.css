@@ -14,7 +14,7 @@ button {
 
 h1 {
   font-family: Nohemi;
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 500;
   line-height: 63px;
   text-align: left;
@@ -57,6 +57,10 @@ h4 {
 }
 
 /* HEADER */
+
+  .navbar {
+    padding: 16px;
+  }
   
   .container {
     display: flex;
@@ -112,6 +116,10 @@ h4 {
     justify-content: center;
     left: 72px;
     gap: 40px;
+  }
+
+  #home div {
+    width: 35%;
   }
 
   #home button {
@@ -256,6 +264,10 @@ input {
 
 @media (max-width: 900px) {
 
+  #about, #cards, #form {
+    padding: 40px;
+  }
+
   h1 {
     font-size: 40px;
     text-align: center;
@@ -263,6 +275,10 @@ input {
 
   h2 {
     font-size: 35px;
+  }
+
+  #home div {
+    width: 100%;
   }
 
   #home img {
