@@ -3,11 +3,7 @@ function Header() {
         const x = document.getElementById("myTopnav");
         /* Correction du npm run build */
         if (x) { // Vérifiez si l'élément avec l'ID "myTopnav" existe
-            if (x.classList.contains("topnav")) {
-                x.classList.add("responsive");
-            } else {
-                x.classList.remove("responsive");
-            }
+            x.classList.toggle("responsive");
         }
     }
 

@@ -48,8 +48,12 @@ h4 {
   display: flex;
 }
 
-#about, #cards, #form, #home {
+#about, #cards, #form {
   padding: 80px;
+}
+
+#home {
+  padding: 40px;
 }
 
 /* HEADER */
