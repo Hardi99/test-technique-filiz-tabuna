@@ -1,7 +1,7 @@
 function About() {
     return (
         <section id="about">
-            <img src="../public/images/image-about-us.png" alt="" />
+            <img src="../images/image-about-us.png" alt="" />
             <div>
                 <h2>Qui sommes-nous ?</h2>
                 <p>Bienvenue chez Café Neko, l'endroit où le café et les chats se rencontrent pour créer une expérience unique en son genre.</p><br />

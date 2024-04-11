@@ -7,7 +7,7 @@ function Home() {
                 <p>Bienvenue dans notre univers où chaque tasse de café est accompagnée d'une dose d'amour félin.</p>
                 <button>Nous contacter</button>
             </div>
-            <img src="../public/images/cat-hero-section.png" alt="" />
+            <img src="../images/cat-hero-section.png" alt="" />
         </section>
     )
 }

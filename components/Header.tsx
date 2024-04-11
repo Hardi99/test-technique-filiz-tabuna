@@ -1,18 +1,21 @@
 function Header() {
     function myFunction() {
         const x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+        /* Correction du npm run build */
+        if (x) { // Vérifiez si l'élément avec l'ID "myTopnav" existe
+            if (x.classList.contains("topnav")) {
+                x.classList.add("responsive");
+            } else {
+                x.classList.remove("responsive");
+            }
         }
-      }
+    }
 
     return (
         <nav className='navbar'>
             <div className="container">
                 <div id="responsive">
-                    <img src="../public/images/logo.svg" alt=""/>
+                    <img src="../images/logo.svg" alt=""/>
                     <a href="javascript:void(0);" className="icon" onClick={myFunction}>
                         <i className="fa fa-bars"></i>
                     </a>
