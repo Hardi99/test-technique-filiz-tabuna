@@ -2,6 +2,7 @@ function Header() {
     function myFunction() {
         const x = document.getElementById("myTopnav");
         /* Correction du npm run build */
+        
         if (x) { // Vérifiez si l'élément avec l'ID "myTopnav" existe
             x.classList.toggle("responsive");
         }

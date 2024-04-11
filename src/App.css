@@ -40,7 +40,7 @@ h4 {
   font-family: Nohemi;
   font-size: 20px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 27px;
   text-align: left;
 }
 
@@ -112,10 +112,6 @@ h4 {
     justify-content: center;
     left: 72px;
     gap: 40px;
-  }
-
-  #home div {
-    width: 474px;
   }
 
   #home button {
@@ -261,7 +257,7 @@ input {
 @media (max-width: 900px) {
 
   h1 {
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -269,16 +265,12 @@ input {
     font-size: 35px;
   }
 
-  #home {
-    justify-content: center;
-  }
-
   #home img {
     width: 349.07px;
     height: 295.26px;
   }
 
-  #about, #home {
+  #about {
     flex-direction: column-reverse;
   }
 
